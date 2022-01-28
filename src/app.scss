@@ -1,0 +1,23 @@
+.app {
+    height: 100%;
+}
+
+.sections {
+    width: 100%;
+    height: calc(100vh - 70px); //fait commencer la section 70px en dessous
+    background-color: slateblue;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory; //permet au scroll d'aller sur la section suivante
+    &::-webkit-scrollbar{
+        display: none; //permet de masquer la barre de scroll
+    }
+
+    > *{ //Pour tous mes composants dans sections
+        width: 100%;
+        height: calc(100vh - 70px);
+        scroll-snap-align: start; 
+    }
+}
