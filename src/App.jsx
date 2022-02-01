@@ -6,11 +6,13 @@ import Portfolio from './components/portfolio/portfolio';
 import Works from './components/works/works';
 import Contact from './components/contact/contact';
 import './app.scss';
+import { useState } from "react";
 
 function App() {
+  const [menuOpen,setMenuOpen] = useState(false) //initialise les fonctions menuOpen et setMenuOpen, puis on le met dans Topbar
   return (
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Portfolio/>
