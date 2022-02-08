@@ -1,4 +1,4 @@
-export const projectsPorfolio = [
+export const projectsPorfolio = [ //liste des images de la liste de portfolio
     {
       id: 1,
       title: "Social Media App",

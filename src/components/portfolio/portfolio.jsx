@@ -25,18 +25,18 @@ export default function portfolio () {
 
     switch(selected) {
       case "projects":
-        setData(projectsPorfolio)
+        setData(projectsPorfolio);
         break;
         case "jdr":
-        setData(jdrPortfolio)
+        setData(jdrPortfolio);
         break;
         case "characters":
-        setData(charactersPortfolio)
+        setData(charactersPortfolio);
         break;
         default:
-          setData(projectsPorfolio)
+          setData(projectsPorfolio);
     }
-  },[selected])
+  },[selected]);
 
   return (
   
